@@ -20,7 +20,7 @@ This is a simple Task Management application built using React. It allows you to
 
 You can try out a live demo of the Task Management App by following this link:
 
-[Live Demo](https://your-live-demo-url.com)
+[Live Demo](https://tasks-managment.vercel.app/)
 
 ## Usage
 
