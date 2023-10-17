@@ -77,17 +77,21 @@ function App() {
         />
         <Form addTask={addTask} />
       </div>
-      <div className="task-list">
-        {filteredTasks.map((task, i) => (
-          <Task
-            key={i}
-            task={task}
-            deleteTask={deleteTask}
-            editTask={editTask}
-            updateStatus={updateStatus}
-          />
-        ))}
-      </div>
+      {tasks.length ? (
+        <div className="task-list">
+          {filteredTasks.map((task, i) => (
+            <Task
+              key={i}
+              task={task}
+              deleteTask={deleteTask}
+              editTask={editTask}
+              updateStatus={updateStatus}
+            />
+          ))}
+        </div>
+      ) : (
+        <h1 className="no-task">Please add any tasks</h1>
+      )}
     </div>
   );
 }
