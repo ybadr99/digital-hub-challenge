@@ -11,8 +11,8 @@ const Task = ({ task, deleteTask, editTask, updateStatus }) => {
   };
 
   const handleSave = () => {
-    editTask(task.id, editedTitle);
     updateStatus(task.id, editedStatus);
+    editTask(task.id, editedTitle);
     setEditing(false);
   };
 
